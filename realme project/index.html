@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='style.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src=script.js></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <header class='header sticky-top'>
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class='container ml'>
+
+        <a class="navbar-brand mr-5" href="">
+          <img src='img/logo realme.png' width="80" height="24">
+        </a>
+
+
+        <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                realme GT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container mt-4">
+                  <div class="row">
+                    <div class="col-md-4 mt-2 fadeUp">
+                      <a href='#' style="text-decoration:none" title='realme GT Master Edition'>
+                        <img src='img/GT master.png' class='mr-3' width="80" height="80">
+                        <p style='color:black; white-space: pre-line;' class='submenu'>
+                          <span class='new'>NEW</span>
+                          realme GT Master Edition
+                          <span class='price'></span>
+                        </p>
+                      </a>
+
+                    </div>
+                    <div class="col-md-4 mt-2 fadeUp">
+                      <a href='#' style="text-decoration:none" title='realme GT'>
+                        <img src='img/GT.png' class='mr-3' width="80" height="80">
+                        <p style='color:black; white-space: pre-line;' class='submenu'>
+                          <span class='new'>NEW</span>
+                          realme GT
+                          <span class='price'>฿ 19,990</span>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                realme 8 5G
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 mt-4 fadeUp">
+                      <a href='#' style="text-decoration:none" title='realme 8 5G'>
+                        <img src='img/8 5G.png' class='mr-3' width="80" height="80">
+                        <p style='color:black; white-space: pre-line;' class='submenu'>
+                          <span class='new'>NEW</span>
+                          realme 8 5G
+                          <span class='price'>฿ 9,999</span>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                realme 7 5G
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                onmouseover="show(this.innerHTML)" aria-haspopup="true" aria-expanded="false">
+                สมาร์ทโฟน
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col fadeUp subnav mt-4">
+                      <div class="row">
+                        <div class='col-2 tabmenu' id='8' onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>Series 8<span><img
+                                id='first-arrow' class='right-arrow still-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span>
+                          </a>
+                        </div>
+                        <div class="col detail" id='detail-8'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme 8'>
+                                <img src='img/smartphone/8.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme 8
+                                  <span class='price'>฿ 8,999</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2  tabmenu' id='narzo' onmouseover="toggle(this.id)"
+                          onmouseleave="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>narzo Series<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+
+                        </div>
+                        <div class="col detail" id='detail-narzo'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme narzo 30A'>
+                                <img src='img/smartphone/narzo 30A.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme narzo 30A
+                                  <span class='price'>฿ 4,599</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme narza 20 pro'>
+                                <img src='img/smartphone/narzo 20 pro.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme narzo 20 pro
+                                  <span class='price'>฿ 8,499</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2  tabmenu' id='c' onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>C series<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+
+                        </div>
+                        <div class="col detail" id='detail-c'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme C21'>
+                                <img src='img/smartphone/C21.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme C21
+                                  <span class='price'>฿ 4,299</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme C25'>
+                                <img src='img/smartphone/C25.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme C25
+                                  <span class='price'>฿ 5,499</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3 mt-2'>
+                              <a href='#' style="text-decoration:none" title='realme C12'>
+                                <img src='img/smartphone/C12.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme C12
+                                  <span class='price'>฿ 3,999</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme C17'>
+                                <img src='img/smartphone/C17.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme C17
+                                  <span class='price'>฿ 4,999</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2  tabmenu' id='7' onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>7 Series<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+
+                        </div>
+                        <div class="col detail" id='detail-7'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme 7 5G'>
+                                <img src='img/smartphone/7 5G.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme 7 5G
+                                  <span class='price'>฿ 9,999</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme 7 Pro'>
+                                <img src='img/smartphone/7 pro.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme 7 Pro
+                                  <span class='price'>฿ 10,990</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme 7i'>
+                                <img src='img/smartphone/7i.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme 7i
+                                  <span class='price'>฿ 7,499</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2  tabmenu' id='x' onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>X Series<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+                        </div>
+                        <div class="col detail" id='detail-x'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme X7 Pro 5G'>
+                                <img src='img/smartphone/x7 pro 5G.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme X7 Pro 5G
+                                  <span class='price'>฿ 16,990</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme X50 5G'>
+                                <img src='img/smartphone/x50 5G.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme X50 5G
+                                  <span class='price'>฿ 12,990</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme X50 Pro 5G'>
+                                <img src='img/smartphone/x50 pro 5G.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme X50 Pro 5G
+                                  <span class='price'>฿ 28,990</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" onmouseover="show(this.innerHTML)">
+                อุปกรณ์
+              </a>
+              <div class="dropdown-menu" id='bignav' aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col fadeUp subnav mt-4">
+                      <div class="row">
+                        <div class='col-2 tabmenu' id='Audio' onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>Audio<span><img
+                                id='second-arrow' class='right-arrow still-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span>
+                          </a>
+                        </div>
+                        <div class="col detail" id='detail-Audio'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme Buds Q2'>
+                                <img src='img/อุปกรณ์/audio/buds Q2.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme Buds Q2
+                                  <span class='price'>฿ 999</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme Buds Air 2'>
+                                <img src='img/อุปกรณ์/audio/buds air 2.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Buds Air 2
+                                  <span class='price'>฿ 2,499</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col'>
+                              <a href='#' style="text-decoration:none" title='realme Buds Air 2 Neo'>
+                                <img src='img/อุปกรณ์/audio/bud air 2 neo.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Buds Air 2 Neo
+                                  <span class='price'>฿ 1,299</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <a href='#' style="text-decoration:none" title='realme Buds Air Pro'>
+                                <img src='img/อุปกรณ์/audio/buds air pro.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Buds Air Pro
+                                  <span class='price'>฿ 2,999</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class="col-3">
+                              <a href='#' style="text-decoration:none" title='realme Buds Q'>
+                                <img src='img/อุปกรณ์/audio/buds Q.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Buds Q
+                                  <span class='price'>฿ 999</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class="col-3">
+                              <a href='#' style="text-decoration:none" title='realme Buds Air Neo'>
+                                <img src='img/อุปกรณ์/audio/buds air neo.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Buds Air Neo
+                                  <span class='price'>฿ 1,499</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-3">
+                              <a href='#' style="text-decoration:none" title='realme Buds Air'>
+                                <img src='img/อุปกรณ์/audio/buds air.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Buds Air
+                                  <span class='price'>฿ 1,999</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2  tabmenu' id='SmartLife' onmouseover="toggle(this.id)"
+                          onmouseleave="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>Smart Life<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+
+                        </div>
+                        <div class="col detail" id='detail-SmartLife'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme Book'>
+                                <img src='img/อุปกรณ์/smart life/realme book.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme book
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-4'>
+                              <a href='#' style="text-decoration:none" title='realme TechLife Air Purifier'>
+                                <img src='img/อุปกรณ์/smart life/air purifier.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme TechLife Air Purifier
+                                  <span class='price'>฿ 3,999</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col'>
+                              <a href='#' style="text-decoration:none" title='realme Watch 2 Pro'>
+                                <img src='img/อุปกรณ์/smart life/watch 2 pro.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme Watch 2 Pro
+                                  <span class='price'>฿ 3,499</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <a href='#' style="text-decoration:none" title='realme Watch 2'>
+                                <img src='img/อุปกรณ์/smart life/watch 2.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  <span class='new'>NEW</span>
+                                  realme Watch 2
+                                  <span class='price'>฿ 1,499</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class="col-4">
+                              <a href='#' style="text-decoration:none" title='realme Watch S Master Edition'>
+                                <img src='img/อุปกรณ์/smart life/watch s master edition.jpg' class='mr-3' width="80"
+                                  height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Watch S Master Edition
+                                  <span class='price'>฿ 3,490</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class="col">
+                              <a href='#' style="text-decoration:none" title='realme Watch S Pro'>
+                                <img src='img/อุปกรณ์/smart life/watch s pro.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Watch S Pro
+                                  <span class='price'>฿ 4,999</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2  tabmenu' id='equitment' onmouseover="toggle(this.id)"
+                          onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu'
+                            style='text-decoration:none; 
+                            '>อุปกรณ์สมาร์ทโฟน<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+                        </div>
+                        <div class="col detail" id='detail-equitment'>
+                          <div class='row'>
+                            <div class='col-3'>
+                              <a href='#' style="text-decoration:none" title='realme PowerBank'>
+                                <img src='img/อุปกรณ์/power bank.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme PowerBank
+                                  <span class='price'>฿ 999</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class='col-2 tabmenu' id='AIOT' onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                          <a href='#' class='sub-submenu' style='text-decoration:none;'>AIOT<span><img
+                                class='right-arrow'
+                                src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+'></span></a>
+                        </div>
+                        <div class="col detail" id='detail-AIOT'>
+                          <div class='row'>
+                            <div class='col-4'>
+                              <a href='#' style="text-decoration:none" title='realme Smart Bulb'>
+                                <img src='img/อุปกรณ์/AIOT/bulb.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Smart Bulb
+                                  <span class='price'>฿ 699</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-4'>
+                              <a href='#' style="text-decoration:none" title='realme Motion Activated Night Light'>
+                                <img src='img/อุปกรณ์/AIOT/night light.png' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  realme Motion Activated
+                                  Night Light
+                                  <span class='price'>฿ 399</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col'>
+                              <a href='#' style="text-decoration:none" title='M1 Sonic Electric Toothbrush'>
+                                <img src='img/อุปกรณ์/AIOT/M1 toothbrush.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  M1 Sonic Electric Toothbrush
+                                  <span class='price'>฿ 1,499</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <div class='col-4'>
+                              <a href='#' style="text-decoration:none" title='N1 Sonic Electric Toothbrush'>
+                                <img src='img/อุปกรณ์/AIOT/N1 toothbrush.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  N1 Sonic Electric Toothbrush
+                                  <span class='price'>฿ 699</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col-4'>
+                              <a href='#' style="text-decoration:none" title='N1 Sonic Electric Toothbrush Head'>
+                                <img src='img/อุปกรณ์/AIOT/N1 head.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  N1 Sonic Electric Toothbrush
+                                  Head
+                                  <span class='price'>฿ 299</span>
+                                </p>
+                              </a>
+                            </div>
+                            <div class='col'>
+                              <a href='#' style="text-decoration:none" title='M1 Sonic Electric Toothbrush Head'>
+                                <img src='img/อุปกรณ์/AIOT/M1 head.jpg' class='mr-3' width="80" height="80">
+                                <p style='color:black; white-space: pre-line;' class='submenu'>
+                                  M1 Sonic Electric Toothbrush
+                                  Head
+                                  <span class='price'>฿ 399</span>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                แบรนด์
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-1">
+            <li class="nav-item">
+              <a class="nav-link menu" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                ช่วยเหลือ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

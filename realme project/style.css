@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "DBadmanX";
+    src:
+      local('DBadmanX'),
+      local('DB adman X'),
+      url('font/DBAdmanX.ttf') format('truetype');
+  }
+
+  body {
+    font-family: 'DBadmanX', sans-serif;
+  }
+
+  .menu {
+    font-size: 21px;
+
+    color: black;
+  }
+
+  .menu:hover {
+    color: rgb(252, 204, 20);
+  }
+
+
+  /* adds some margin below the link sets  */
+  .navbar .dropdown-menu div[class*="col"] {
+    margin-bottom: 1rem;
+  }
+
+  .navbar .dropdown-menu {
+    border: none;
+    background-color: #ffffff !important;
+  }
+
+  /* breakpoint and up - mega dropdown styles */
+  @media screen and (min-width: 992px) {
+
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .navbar {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .navbar .nav-item {
+      padding: .5rem .5rem;
+      margin: 0 .25rem;
+    }
+
+    /* makes the dropdown full width  */
+    .navbar .dropdown {
+      position: static;
+    }
+
+    .navbar .dropdown-menu {
+      width: 100%;
+      height: 320px;
+      left: 0;
+      right: 0;
+      /*  height of nav-item  */
+      top: 60px;
+      box-shadow: 0 1px 5px -2px grey;
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0s linear;
+
+    }
+
+
+    /* shows the dropdown menu on hover */
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown .dropdown-menu:hover {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity 0s linear;
+      box-shadow: 0 5px 10px -3px rgb(185, 185, 185);
+    }
+
+    .navbar .dropdown-menu {
+      background-color: #fff;
+    }
+
+  }
+
+  .submenu {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .new {
+    color: rgb(81, 223, 228);
+    font-size: 16px !important;
+  }
+
+  .price {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+  }
+  .fadeUp {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    
+  }
+  .dropdown:hover .fadeUp {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+  .sub-submenu, .sub-submenu:hover {
+    font-size: 22px;
+    color:black;
+  }
+
+  .tabmenu {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+  .detail, .right-arrow {
+    display: none;
+  }
+  .tabmenu:hover, .tabmenu:hover::after,.bold {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .detail { 
+    position: fixed;
+    top:0;
+    left:200px;
+    display: none;
+    height: 100%;
+  }
+
+  .tabmenu:hover .right-arrow,.still-arrow {
+    display: inline;
+  }
+  .show{
+    display:block;
+    background-color: white;
+    position: fixed;
+  }
+  .showfirst{
+    display:block;
+    background-color: white;
+    z-index: 999;
+  }
+
