@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realme GT Master Edition - realme (ประเทศไทย</title>
+    <link rel="icon" href="img/tab icon.png">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container ml">
+                <a class="navbar-brand mr-5" href="#">
+                    <img src="img/logo realme.png" width="80" height="24">
+                </a>
+                <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-1">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                realme GT
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4 mt-2 fadeUp">
+                                            <a href="#" style="text-decoration: none;" title="realme GT Master Edition">
+                                                <img src="img/GT master.png" width="80" height="80">
+                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                    <span class="new">NEW</span>
+                                                    realme GT Master Edition
+                                                    <span class="price"></span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mt-2 fadeUp">
+                                            <a href="#" style="text-decoration: none;" title="realme GT">
+                                                <img src="img/GT.png" width="80" height="80">
+                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                    <span class="new">NEW</span>
+                                                    realme GT
+                                                    <span class="price">฿ 19,990</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-1">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                realme 8 5G
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 mt-4 fadeUp">
+                                            <a href="#" style="text-decoration: none;" title="realme 8 5G">
+                                                <img src="img/8 5G.png" class="mr-3" width="80" height="80">
+                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                    <span class="new">NEW</span>
+                                                    realme 8 5G
+                                                    <span class="price">฿ 9,999</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-1">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link menu" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                realme 7 5G
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-1">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link menu" id="navbarDropdown" role="button" data-toggle="dropdown" onmouseover="show(this.innerHTML)" aria-haspopup="true" aria-expanded="false">
+                                สมาร์ทโฟน
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col fadeUp subnav mt-4">
+                                            <div class="row">
+                                                <div class="col-2 tabmenu" id="8" onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                                                    <a href="#" class="sub-submenu" style="text-decoration: none;">
+                                                        Series 8
+                                                        <span><img id="first-arrow" class="right-arrow still-arrow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="col detail" id="detail-8">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme 8">
+                                                                <img src="img/smartphone/8.png" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                <span class="new">NEW</span>
+                                                                realme 8
+                                                                <span class="price">฿ 8,999</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2 tabmenu" id="narzo" onmouseover="toggle(this.id)" onmouseleave="bold(this.id)">
+                                                    <a href="#" class="sub-submenu" style="text-decoration: none;">narzo Series
+                                                        <span><img  class="right-arrow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="col detail" id="detail-narzo">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme narzo 30A">
+                                                                <img src="img/smartphone/narzo 30A.png" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    realme narzo 30A
+                                                                    <span class="price">฿ 4,599</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme narzo 30A">
+                                                                <img src="img/smartphone/narzo 20 pro.jpg" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    realme narzo 20 pro
+                                                                    <span class="price">฿ 8,499</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2 tabmenu" id="c" onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                                                    <a href="#" class="sub-submenu" style="text-decoration: none;">
+                                                        C Series
+                                                        <span><img class="right-arrow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="col detail" id="detail-c">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme C21">
+                                                                <img src="img/smartphone/C21.png" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    <span class="new">NEW</span>
+                                                                    realme C21
+                                                                    <span class="price">฿ 4,299</span>
+                                                                </p> 
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme C25">
+                                                                <img src="img/smartphone/C25.png" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    <span class="new">NEW</span>
+                                                                    realme C25
+                                                                    <span class="price">฿ 5,499</span>
+                                                                </p> 
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <a href="#" style="text-decoration: none;" title="realme C12">
+                                                                <img src="img/smartphone/C12.png" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    <span class="new">NEW</span>
+                                                                    realme C12
+                                                                    <span class="price">฿ 3,999</span>
+                                                                </p> 
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme C17">
+                                                                <img src="img/smartphone/C17.jpg" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    realme C17
+                                                                    <span class="price">฿ 4,999</span>
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2 tabmenu" id="7" onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                                                    <a href="#" class="sub-submenu" style="text-decoration: none;">
+                                                        7 Series
+                                                        <span><img class="right-arrow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="col detail" id="detail-7">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme 7 5G">
+                                                                <img src="img/smartphone/7 5G.jpg" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    realme 7 5G
+                                                                    <span class="price">฿ 9,999</span>
+                                                                </p> 
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme 7 Pro">
+                                                                <img src="img/smartphone/7 pro.png" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    realme 7 Pro
+                                                                    <span class="price">฿ 10,990</span>
+                                                                </p> 
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <a href="#" style="text-decoration: none;" title="realme 7i">
+                                                                <img src="img/smartphone/7i.jpg" class="mr-3" width="80" height="80">
+                                                                <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                    realme 7i
+                                                                    <span class="price">฿ 7,499</span>
+                                                                </p> 
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 tabmenu" id="x" onmouseover="toggle(this.id)" onmouseout="bold(this.id)">
+                                                <a href="#" class="sub-submenu" style="text-decoration: none;">
+                                                    X Series
+                                                    <span><img class="right-arrow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5pY1/lj7PlvIA8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxnIGlkPSJpY1/lj7PlvIAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0i5LiL5ouJIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi4wMDAwMDAsIDEyLjAwMDAwMCkgcm90YXRlKC05MC4wMDAwMDApIHRyYW5zbGF0ZSgtMTIuMDAwMDAwLCAtMTIuMDAwMDAwKSB0cmFuc2xhdGUoNC4wMDAwMDAsIDQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCI+DQogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiBvcGFjaXR5PSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjwvcmVjdD4NCiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjcuOTk5OTkyIDkuOTE2OTI0MzMgMi4wNzQ5NTMxOSAzLjk5MTg4NTUgMS4wMjkzOTAwOCA1LjAzNzQ0ODYxIDcuOTk5OTc2MDIgMTIuMDA4MTE0NSAxNC45NzA1NjIgNS4wMzc0NDg2MSAxMy45MjQ5OTg4IDMuOTkxODg1NSI+PC9wb2x5Z29uPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+"></span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="col detail" id="detail-x">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <a href="#" style="text-decoration: none;" title="realme X7 Pro 5G">
+                                                            <img src="img/smartphone/x7 pro 5G.jpg" class="mr-3" width="80" height="80">
+                                                            <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                realme X7 Pro 5G
+                                                                <span class="price">฿ 16,990</span>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#" style="text-decoration: none;" title="realme X50 5G">
+                                                            <img src="img/smartphone/x50 5G.jpg" class="mr-3" width="80" height="80">
+                                                            <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                realme X50 5G
+                                                                <span class="price">฿ 12,990</span>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#" style="text-decoration: none;" title="realme X50 Pro 5G">
+                                                            <img src="img/smartphone/x50 pro 5G.jpg" class="mr-3" width="80" height="80">
+                                                            <p style="color: black; white-space: pre-line;" class="submenu">
+                                                                realme X50 Pro 5G
+                                                                <span class="price">฿ 28,990</span>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
