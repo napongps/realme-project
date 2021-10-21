@@ -94,12 +94,12 @@
     display: inline-block;
   }
 
-  .new {
+  .submenu>.new {
     color: rgb(81, 223, 228);
     font-size: 16px !important;
   }
 
-  .price {
+  .submenu>.price {
     font-size: 20px;
     color: red;
     font-weight: bold;
