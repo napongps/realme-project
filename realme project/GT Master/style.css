@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "DBadmanX";
+    src:
+      local('DBadmanX'),
+      local('DB adman X'),
+      url('font/DBAdmanX.ttf') format('truetype');
+  }
