@@ -53,5 +53,5 @@ function toggle(id){
 function bold(id) {
     document.getElementById(id).classList.add('bold');
     document.getElementById(id).childNodes[1].childNodes[1].childNodes[0].classList.add('still-arrow');
-    
 }
+
