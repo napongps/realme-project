@@ -229,18 +229,27 @@ body {
     margin: 0 auto;
   }
 
-  .k-title {
+  .k-wrapper1 .k-title {
     font-size: 60px;
     color: #fff;
     margin: 0 0 100px;
   }
 
-  .k-explore {
+  .k-wrapper2 {
     height: 1072px;
+    margin: 0 auto;
+  }
+
+  .k-explore {
+    height: 100%;
+  }
+
+  .k-params {
+    position: relative;
+    margin: 0 auto;
   }
 
   .k-explore-item {
-    position: relative;
     display: inline-block;
     margin: 0 auto;
     width: 578px;
@@ -249,7 +258,6 @@ body {
   }
 
   .k-explore-item .k-item-content {
-    position: absolute;
     text-align: center;
   }
 
@@ -264,5 +272,39 @@ body {
   .k-item-content .k-desc {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .k-video video {
+    height: 750px;
+  }
+
+  video {
+    object-fit: contain;
+  }
+
+  .k-designer-title {
+    position: relative;
+    height: 400px;
+    text-align: center;
+    background-color: #121212;
+    padding-top: 150px;
+  }
+
+  .k-content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .k-designer-title .k-content .k-bgtitle .k-title {
+    
+    font-size: 24px;
+    color: #8c92a3;
+  }
+
+  .k-designer-title .k-content .k-title {
+    
+    font-size: 70px;
+    color: #fff;
   }
   /* End of GT Master Page */
