@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "DBadmanX";
+    src:
+        local('DBadmanX'),
+        local('DB adman X'),
+        url('../font/DBAdmanX.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DBadmanX', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+.video-title {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.video {
+    position:relative;
+    z-index:0;
+}
