@@ -18,14 +18,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Open+Sans&family=Roboto&family=Zen+Kaku+Gothic+Antique&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' href='style.css'>
     <link rel='stylesheet' href='../navbarfooter.css'>
     <script src='../navbarfooter.js'></script>
 </head>
 
 <body>
-      <!-- navbar -->
-      <header class='header sticky-top'>
+    <!-- navbar -->
+    <header class='header sticky-top'>
 
         <nav class="navbar navbar-expand-lg ">
             <div class='container ml'>
@@ -688,8 +693,15 @@
         </nav>
     </header>
     <!-- navbar -->
-    <video  class='video' src='https://static.realme.net/v2/brand/images/video-mac-b7fbb94fe1.mp4'></video>
-    <h1 class='video-title'>Dare to Leap</h1>
+    <div class="wrapper">
+        <div class="video">
+            <video src='https://static.realme.net/v2/brand/images/video-mac-b7fbb94fe1.mp4' autoplay='true' loop='true'
+                muted='true' width="100%"></video>
+                <h1>Dare to Leap</h1>
+                <a href=''><img
+                        src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjQ0cHgiIGhlaWdodD0iNDRweCIgdmlld0JveD0iMCAwIDQ0IDQ0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5Hcm91cCAxNjwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGcgaWQ9IuWTgeeJjOmhtSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+DQogICAgICAgIDxnIGlkPSJtb2JpbGUt5ZOB54mM6aG1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTU4LjAwMDAwMCwgLTMwMC4wMDAwMDApIj4NCiAgICAgICAgICAgIDxnIGlkPSJiYW5uZXJfYWN0aXZlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMTIwLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI0LjAwMDAwMCwgMTQwLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2LjAwMDAwMCwgNDIuMDAwMDAwKSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjQiIGN4PSIyMCIgY3k9IjIwIiByPSIyMCI+PC9jaXJjbGU+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTIyLjc1MTU2MDEsMTUuMTU4NTg2NyBMMjcuMjU0NzI2OSwyMi44MTM5NzAyIEMyNy44MTQ3NjU4LDIzLjc2NjAzNjQgMjcuNDk2OTY0OSwyNC45OTE4Mzk5IDI2LjU0NDg5ODcsMjUuNTUxODc4OCBDMjYuMjM3NTQ1NCwyNS43MzI2NzQ5IDI1Ljg4NzQ0NCwyNS44MjgwMTA0IDI1LjUzMDg1ODQsMjUuODI4MDEwNCBMMTYuNTI0NTI1LDI1LjgyODAxMDQgQzE1LjQxOTk1NTUsMjUuODI4MDEwNCAxNC41MjQ1MjUsMjQuOTMyNTc5OSAxNC41MjQ1MjUsMjMuODI4MDEwNCBDMTQuNTI0NTI1LDIzLjQ3MTQyNDkgMTQuNjE5ODYwNSwyMy4xMjEzMjM0IDE0LjgwMDY1NjYsMjIuODEzOTcwMiBMMTkuMzAzODIzMywxNS4xNTg1ODY3IEMxOS44NjM4NjIyLDE0LjIwNjUyMDUgMjEuMDg5NjY1NywxMy44ODg3MTk2IDIyLjA0MTczMiwxNC40NDg3NTg2IEMyMi4zMzQ4MzkzLDE0LjYyMTE3NDYgMjIuNTc5MTQ0MSwxNC44NjU0Nzk0IDIyLjc1MTU2MDEsMTUuMTU4NTg2NyBaIiBpZD0iVHJpYW5nbGUiIGZpbGw9IiNGRkZGRkYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxLjAyNzg1MSwgMjAuMDAwMTU5KSByb3RhdGUoLTI3MC4wMDAwMDApIHRyYW5zbGF0ZSgtMjEuMDI3ODUxLCAtMjAuMDAwMTU5KSAiPjwvcGF0aD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgICAgICAgICAgPC9nPg0KICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgIDwvZz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg=='></a>
+        </div>
+    </div>
     <!-- footer -->
     <footer>
         <div class="wrapper footer" style="position: relative;">
@@ -751,7 +763,7 @@
                 <p><a>Thailand / ภาษาไทย</a></p>
                 <hr>
             </div>
-            <div class="container footer-btm">
+            <div class="container d-flex justify-content-between footer-btm">
                 <small>© 2021 realme. All Rights Reserved.</small><small><a href=''
                         class='text-dark'>ข้อตกลงผู้ใช้งาน</a> | <a href='' class='text-dark'>นโยบายความเป็นส่วนตัว</a>
                     | <a href='' class='text-dark'>เงื่อนไขการรับประกัน</a></small>
