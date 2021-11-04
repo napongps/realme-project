@@ -147,6 +147,11 @@ body {
   }
 
   /* GT Master Page */
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
+  }
+
 .k-banner {
     height: 650px;
     width: 100%;
@@ -161,7 +166,7 @@ body {
   .k-gtmaster {
     width: 100%;
     height: 100%;
-    background-image: url(https://static.realme.net/videos/pic/th/gt-master-edition/PC.jpg);
+    background-image: url(img/gtmaster.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto 100%;
@@ -194,7 +199,7 @@ body {
   
   .k-point {
     height: 1112px;
-    background-image: url(https://static.realme.net/videos/pic/global/gt-master/p/pointer.jpg);
+    background-image: url(img/pointer.jpg);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top center;
@@ -339,9 +344,6 @@ body {
 
   }
 
-  .k-content {
-    margin: 0 auto;
-  }
 
   .k-designer-title .k-content .k-bgtitle {
     width: 100%;
@@ -531,5 +533,340 @@ body {
   .k-sec-design-two .k-sec-desc {
     width: 1020px;
     margin: 40px auto 0 auto;
+  }
+
+  .k-sec-design-three {
+    height: 780px;
+    background: #000;
+    padding-bottom: 50px;
+  }
+
+  .k-sec-design-three .k-sec-content,
+  .k-sec-design-three .k-sec-wrapper {
+    height: 100%;
+  }
+
+  .k-sec-design-three .k-sec-content {
+    width: 1020px;
+    margin: 0 auto;
+  }
+
+  .k-sec-design-three .k-sec-item {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 730px;
+    color: #fff;
+  }
+
+  .k-sec-design-three .k-sec-item .k-content {
+    width: 280px;
+  }
+
+  .k-sec-design-three .k-sec-item .k-content .k-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .k-sec-design-three .k-sec-item .k-content .k-sec-desc {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .k-sec-design-three .k-sec-item img {
+    width: 548px;
+    height: 100%;
+  }
+
+  .k-sec-screen {
+    height: 1282px;
+    background: #000;
+  }
+
+  .k-sec-screen .k-sec-video {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1920px;
+    height: 1050px;
+  }
+
+  .k-sec-screen .k-sec-video video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .k-sec-screen .k-sec-wrapper {
+    padding-top: 910px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .k-sec-screen .k-sec-wrapper .k-sec-desc {
+    margin-top: 40px;
+  }
+
+  .k-sec-screencontent {
+    height: 1072px;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .k-sec-screencontent .k-sec-wrapper .k-sec-desc {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 1176px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .k-sec-screencontent .k-sec-wrapper .k-sec-desc .k-sec-explore-item {
+    width: 578px;
+    height: 200px;
+    margin-bottom: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #151619;
+    border-radius: 20px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  .k-sec-screencontent .k-sec-wrapper .k-sec-desc .k-sec-explore-item .k-sec-item-content .k-sec-item-text {
+    height: 56px;
+    font-size: 40px;
+    background: linear-gradient(90deg, #7c8291 0, #a7abba 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .k-sec-screencontent .k-sec-wrapper .k-sec-desc .k-sec-explore-item .k-sec-item-content {
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+  }
+
+  .k-sec-performance {
+    height: 1602px;
+    background: #000;
+  }
+
+  .k-sec-performance .k-sec-bg {
+    height: 1440px;
+    background-image: url(img/snapdragon.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top center;
+    position: absolute;
+    width: 100%;
+  }
+
+  .k-sec-performance .k-sec-wrapper {
+    padding-top: 1280px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .k-sec-performance .k-sec-wrapper .k-sec-desc {
+    margin-top: 40px;
+  }
+
+  .k-sec-point2 {
+    height: 872px;
+    background: #000;
+  }
+
+  .k-sec-point2 .k-sec-wrapper .k-sec-desc {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 1176px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .k-sec-point2 .k-sec-wrapper .k-sec-desc .k-sec-explore-item {
+    width: 578px;
+    height: 200px;
+    margin-bottom: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #151619;
+    border-radius: 20px;
+  }
+
+  .k-sec-point2 .k-sec-wrapper .k-sec-desc .k-sec-explore-item .k-sec-item-content .k-sec-item-text {
+    height: 56px;
+    font-size: 40px;
+    background: linear-gradient(90deg, #7c8291 0, #a7abba 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .k-sec-point2 .k-sec-wrapper .k-sec-desc .k-sec-explore-item .k-sec-item-content {
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+  }
+
+  .k-sec-speed {
+    height: 1510px;
+    background: #000;
+    color: #fff;
+  }
+
+  .k-sec-speed .k-sec-content{
+    padding-top: 662px;
+  }
+
+  .k-sec-speed .k-content {
+    width: 350px;
+  }
+
+  .k-sec-speed .k-sec-title {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .k-sec-speed .k-sec-desc {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .k-sec-speed .k-sec-product {
+    position: absolute;
+    top: 200px;
+    left: 533px;
+    height: 1195px;
+    width: 552px;
+  }
+
+  .k-sec-speed .k-sec-product video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .k-sec-dissipate {
+    height: 1420px;
+    background: #000;
+    color: #fff;
+  }
+
+  .k-sec-dissipate .k-sec-wrapper {
+    padding-top: 1015px;
+    text-align: center;
+  }
+
+  .k-sec-dissipate .k-phone {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1910px;
+    height: 1080px;
+    transform: translate(-50%, 0);
+  }
+
+  .k-sec-dissipate .k-phone img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .k-sec-dissipate .k-sec-title {
+    position: relative;
+  }
+
+  .k-sec-dissipate .k-sec-desc {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .k-sec-charge {
+    height: 1500px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+
+  .k-sec-charge .k-sec-wrapper {
+    padding-top: 1240px;
+  }
+
+  .k-sec-charge .k-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 1221px;
+  }
+
+  .k-sec-charge .k-bg img {
+    height: 100%;
+  }
+
+  .k-sec-charge .k-sec-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .k-sec-engine {
+    height: 1860px;
+    background: #000;
+  }
+
+  .k-sec-engine .k-sec-wrapper {
+    padding-top: 280px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .k-sec-engine .k-bg {
+    position: relative;
+    width: 100%;
+    height: 907px;
+  }
+
+  .k-sec-engine .k-bg img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1360px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .k-sec-engine .k-sec-title {
+    margin: 120px 0 40px 0;
+  }
+
+  .k-sec-engine .k-sec-desc {
+    width: 1120px;
+    margin: 0 auto;
   }
   /* End of GT Master Page */
