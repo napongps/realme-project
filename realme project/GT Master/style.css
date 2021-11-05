@@ -11,140 +11,213 @@ body {
 }
 
 .header {
-    background-color: white;
-  }
+  background-color: white;
+}
 
-  .menu {
-    font-size: 21px;
+.menu {
+  font-size: 21px;
 
-    color: black;
-  }
+  color: black;
+}
 
-  .menu:hover {
-    color: rgb(252, 204, 20);
-  }
+.menu:hover {
+  color: rgb(252, 204, 20);
+}
 
+.navbar .dropdown-menu div[class*="col"] {
+  margin-bottom: 1rem;
+}
 
-  /* adds some margin below the link sets  */
-  .navbar .dropdown-menu div[class*="col"] {
-    margin-bottom: 1rem;
-  }
+.navbar .dropdown-menu {
+  border: none;
+  background-color: #ffffff !important;
+}
 
-  .navbar .dropdown-menu {
-    border: none;
-    background-color: #ffffff !important;
-  }
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
-  /* breakpoint and up - mega dropdown styles */
-  @media screen and (min-width: 992px) {
+.navbar .nav-item {
+  padding: .5rem .5rem;
+  margin: 0 .25rem;
+}
 
-    /* remove the padding from the navbar so the dropdown hover state is not broken */
-    .navbar {
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
+.navbar .dropdown {
+  position: static;
+}
 
-    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-    .navbar .nav-item {
-      padding: .5rem .5rem;
-      margin: 0 .25rem;
-    }
+.navbar .dropdown-menu {
+  width: 100%;
+  height: 320px;
+  left: 0;
+  right: 0;
+  top: 60px;
+  box-shadow: 0 1px 5px -2px grey;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0s linear;
 
-    /* makes the dropdown full width  */
-    .navbar .dropdown {
-      position: static;
-    }
-
-    .navbar .dropdown-menu {
-      width: 100%;
-      height: 320px;
-      left: 0;
-      right: 0;
-      /*  height of nav-item  */
-      top: 60px;
-      box-shadow: 0 1px 5px -2px grey;
-      display: block;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0s linear;
-
-    }
+}
 
 
-    /* shows the dropdown menu on hover */
-    .navbar .dropdown:hover .dropdown-menu,
-    .navbar .dropdown .dropdown-menu:hover {
-      display: block;
-      visibility: visible;
-      opacity: 1;
-      transition: visibility 0s, opacity 0s linear;
-      box-shadow: 0 5px 10px -3px rgb(185, 185, 185);
-    }
+.navbar .dropdown:hover .dropdown-menu,
+.navbar .dropdown .dropdown-menu:hover {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0s linear;
+  box-shadow: 0 5px 10px -3px rgb(185, 185, 185);
+}
 
-    .navbar .dropdown-menu {
-      background-color: #fff;
-    }
+.navbar .dropdown-menu {
+  background-color: #fff;
+}
 
-  }
+.submenu {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
 
-  .submenu {
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 1em;
-    vertical-align: middle;
-    display: inline-block;
-  }
+.new {
+  position: absolute;
+  top: -2px;
+  left: 115px;
+  color: rgb(81, 223, 228);
+  font-size: 16px !important;
+}
 
-  .new {
-    color: rgb(81, 223, 228);
-    font-size: 16px !important;
-  }
+.submenu>.price {
+  line-height: 25px;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
 
-  .price {
-    font-size: 20px;
-    color: red;
-    font-weight: bold;
-  }
-  .fadeUp {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: transform 0.3s ease, opacity 0.5s ease;
-    
-  }
-  .dropdown:hover .fadeUp {
-    opacity: 1;
-    transform: translateY(0);
+.fadeUp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.3s ease, opacity 0.5s ease;
 
-  }
-  .sub-submenu, .sub-submenu:hover {
-    font-size: 22px;
-    color:black;
-  }
+}
 
-  .tabmenu {
-    color: black;
-    font-size: 20px;
-    line-height: 1.5rem;
-  }
-  .detail, .right-arrow {
-    display: none;
-  }
-  .tabmenu:hover, .tabmenu:hover::after,.bold {
-    font-weight: bold;
-    color: black;
-  }
-  
-  .detail { 
-    position: fixed;
-    top:0;
-    left:200px;
-    display: none;
-    height: 100%;
-  }
+.dropdown:hover .fadeUp {
+  opacity: 1;
+  transform: translateY(0);
 
-  .tabmenu:hover .right-arrow,.still-arrow {
-    display: inline;
-  }
+}
+
+.sub-submenu,
+.sub-submenu:hover {
+  font-size: 22px;
+  color: black;
+}
+
+.tabmenu {
+  color: black;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
+.detail,
+.right-arrow {
+  display: none;
+}
+
+.detail .row {
+  background-color: white;
+}
+
+#detail-AIOT .row .col-3 {
+  margin: 0 10px;
+  padding: 0 0;
+}
+
+.tabmenu:hover,
+.tabmenu:hover::after,
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.detail {
+  position: fixed;
+  top: 0;
+  left: 200px;
+  display: none;
+  height: 100%;
+}
+
+.tabmenu:hover .right-arrow,
+.still-arrow {
+  display: inline;
+}
+
+.show {
+  display: block;
+  background-color: white;
+  position: fixed;
+}
+
+.showfirst {
+  display: block;
+  background-color: white;
+  z-index: 2;
+}
+
+/* footer */
+.footer {
+  background-color: white;
+  padding-top: 50px;
+}
+
+.footer .title {
+  font-size: 20px !important;
+  letter-spacing: -0.05rem;
+  font-weight: bold;
+}
+
+.footer .footer-list {
+  font-size: 16px !important;
+}
+
+.footer .footer-list p {
+  margin-bottom: 0;
+}
+
+.footer .footer-list p a {
+  line-height: 28px;
+  color: black !important;
+}
+
+.footer .footer-list p a:hover {
+  color: rgb(252, 204, 20) !important;
+}
+
+.timedate {
+  margin-top: 6px;
+  line-height: 18px;
+  font-size: 16px !important;
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.footer-btm {
+  padding-bottom: 75px;
+  font-size: 20px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* footer */
 
   /* GT Master Page */
 
@@ -153,6 +226,11 @@ body {
   }
 
 .k-banner {
+    height: 100%;
+    width: 100%;
+  }
+
+  .k-wrapper-banner {
     height: 650px;
     width: 100%;
     background-color: #000;
@@ -226,45 +304,120 @@ body {
     margin-bottom: 60px;
   }
 
-  .k-wrapper1 {
+  .k-sec-explore {
     height: 1624px;
-    padding: 180px 0 0;
+    padding-top: 180px;
     background-color: #121212;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .k-wrapper1 .k-title {
-    font-size: 60px;
     color: #fff;
-    margin: 0 0 100px;
+    box-sizing: border-box;
   }
 
-  .k-wrapper2 {
+  .k-sec-explore .k-sec-wrapper .k-sec-title {
+    text-align: center;
+    margin-bottom: 100px;
+    line-height: 72px;
+  }
+
+  .k-sec-explore .k-sec-content {
+    position: relative;
+    width: 1176px;
     height: 1072px;
-    margin: 0 auto;
   }
 
-  .k-explore {
+  .k-sec-explore .k-sec-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .k-sec-explore .k-sec-content .k-params {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
   }
 
-  .k-params {
+  .k-sec-explore .k-sec-content .k-sec-explore-item {
     position: relative;
-    margin: 0 auto;
-  }
-
-  .k-explore-item {
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
     width: 578px;
     height: 250px;
     margin-bottom: 24px;
+    top: 125px;
+    transform: translateY(-50%);
   }
 
-  .k-explore-item .k-item-content {
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-sec-item-content {
+    position: absolute;
     text-align: center;
+    color: rgba(255, 255, 255, .6);
+  }
+
+  .k-sec-explore .k-sec-content .k-content1,
+  .k-sec-explore .k-sec-content .k-content2 {
+    right: 50px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content1 {
+    top: 80px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content2 {
+    top: 60px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content3 {
+    width: 100%;
+    left: 0;
+    bottom: 48px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content4 {
+    left: 50px;
+    top: 90px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content5 {
+    left: 0;
+    top: 40px;
+    width: 100%;
+  }
+
+  .k-sec-explore .k-sec-content .k-content6 {
+    right: 40px;
+    top: 55px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content7 {
+    right: 50px;
+    top: 55px;
+  }
+
+  .k-sec-explore .k-sec-content .k-content8 {
+    left: 50px;
+    top: 55px;
+  }
+
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-sec-item-content .k-title {
+    line-height: 48px;
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-content3 .k-title,
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-content4 .k-title,
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-content5 .k-title,
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-content6 .k-title,
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-content8 .k-title {
+    font-size: 30px;
+  }
+
+  .k-sec-explore .k-sec-content .k-sec-explore-item .k-sec-item-content .k-desc {
+    font-size: 20px;
   }
 
   div {
@@ -273,19 +426,6 @@ body {
 
   section {
     display: block;
-  }
-
-  .k-content1, .k-content2 {
-    font-size: 40px;
-  }
-
-  .k-item-title {
-    margin-bottom: 8px;
-  }
-
-  .k-item-content .k-desc {
-    font-size: 20px;
-    line-height: 28px;
   }
 
   .k-designer-videos {
@@ -483,6 +623,7 @@ body {
   .k-sec-desc {
     font-size: 24px;
     line-height: 38px;
+    color: rgba(255, 255, 255, .6);
   }
 
   .k-sec-design-one .k-sec-desc {
@@ -670,12 +811,15 @@ body {
     background: #000;
   }
 
-  .k-sec-performance .k-sec-bg {
-    height: 1440px;
-    background-image: url(img/snapdragon.jpg);
+  .k-sec-bg {
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top center;
+  }
+
+  .k-sec-performance .k-sec-bg {
+    height: 1440px;
+    background-image: url(img/snapdragon.jpg);
     position: absolute;
     width: 100%;
   }
@@ -1151,5 +1295,205 @@ body {
 
   .k-sec-camera .k-bg .k-item3 {
     top: 503px;
+  }
+
+  .k-sec-resolvepower {
+    height: 1204px;
+    background: #000;
+    color: #fff;
+  }
+
+  .k-sec-resolvepower .k-sec-wrapper {
+    padding-top: 700px;
+    text-align: center;
+  }
+
+  .k-sec-resolvepower .k-sec-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .k-sec-resolvepower .k-sec-title {
+    margin-bottom: 40px;
+  }
+
+  .k-sec-resolvepower .k-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1224px;
+  }
+
+  .k-sec-resolvepower .k-bg img {
+    width: 100%;
+  }
+
+  .k-sec-nightscape-one {
+    height: 1390px;
+    background: #000;
+    color: #fff;
+  }
+
+  .k-sec-nightscape-one .k-sec-wrapper {
+    text-align: center;
+  }
+
+  .k-sec-nightscape-one .k-sec-title {
+    margin-bottom: 40px;
+  }
+
+  .k-sec-nightscape-one .k-bg {
+    position: absolute;
+    top: 324px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1180px;
+  }
+
+  .k-sec-nightscape-one .k-bg img {
+    width: 100%;
+  }
+
+  .k-sec-nightscape-one .k-bg .k-sec-desc {
+    margin-top: 80px;
+  }
+
+  .k-sec-nightscape-two {
+    height: 1186px;
+    background: #000;
+    color: #fff;
+  }
+
+  .k-sec-nightscape-two .k-bg {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    width: 2048px;
+  }
+
+  .k-sec-nightscape-two .k-bg img {
+    width: 100%;
+  }
+
+  .k-sec-nightscape-two .k-sec-desc {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .k-sec-ui {
+    height: 1259px;
+    color: #000;
+  }
+
+  .k-sec-ui .k-sec-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(img/android.jpg);
+  }
+
+  .k-sec-ui .k-sec-content {
+    text-align: center;
+    color: #fff;
+  }
+
+  .k-sec-ui .k-sec-content .k-logo {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+
+  .k-sec-ui .k-sec-content .k-logo img {
+    width: 100%;
+  }
+
+  .k-sec-ui .k-sec-content .k-slogan-box {
+    padding-top: 250px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .k-sec-ui .k-sec-content .k-ui-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+
+  .k-sec-ui .k-sec-content .k-slogan {
+    font-size: 36px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, .8);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
+
+  .k-sec-nfc {
+    height: 1400px;
+    background: #000;
+    color: #fff;
+  }
+
+  .k-sec-nfc .k-sec-wrapper {
+    padding-top: 200px;
+  }
+
+  .k-sec-nfc .k-phone {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 600px;
+  }
+
+  .k-sec-nfc .k-phone img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .k-sec-nfc .k-phone .k-sec-title {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-size: 50px;
+  }
+
+  .k-sec-nfc .k-sec-content {
+    width: 100%;
+    text-align: center;
+    margin: 80px auto 0 auto;
+  }
+
+  .k-sec-nfc .k-sec-title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 58px;
+  }
+
+  .k-sec-remark {
+    height: 724px;
+    background: #121212;
+    color: #fff;
+  }
+
+  .k-sec-remark .k-sec-wrapper{
+    padding: 200px 0;
+  }
+
+  .k-sec-remark p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, .6);
   }
   /* End of GT Master Page */
