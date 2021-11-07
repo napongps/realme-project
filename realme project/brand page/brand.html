@@ -20,9 +20,7 @@
         crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Open+Sans&family=Roboto&family=Zen+Kaku+Gothic+Antique&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='style.css'>
     <script src='script.js'></script>
     <link rel='stylesheet' href='../navbar and footer/navbarfooter.css'>
@@ -709,43 +707,58 @@
         </header>
 
         <!-- navbar -->
+        <!-- video -->
         <div class="wrapper" style='overflow: hidden;'>
-            <div class="video">
-                <video src='img/brand video.mp4' autoplay='true' loop='true' muted='true'></video>
-                <div class="wrapper overlay-video">
-                    <h1 class='text-white'
-                        style="font-family: 'Open Sans', sans-serif; font-size: 40px; font-weight: bold;">Dare to Leap
+            <div class="g-video">
+                <video src='video/brand video.mp4' autoplay='true' loop='true' muted='true'></video>
+                <div class="wrapper g-overlay-video">
+                    <h1 class='text-white opensan-semibold' style="font-size: 40px;">Dare to Leap
                     </h1>
                     <a href=''><img
                             src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjQ0cHgiIGhlaWdodD0iNDRweCIgdmlld0JveD0iMCAwIDQ0IDQ0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTIuNSAoNjc0NjkpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5Hcm91cCAxNjwvdGl0bGU+DQogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+DQogICAgPGcgaWQ9IuWTgeeJjOmhtSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+DQogICAgICAgIDxnIGlkPSJtb2JpbGUt5ZOB54mM6aG1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTU4LjAwMDAwMCwgLTMwMC4wMDAwMDApIj4NCiAgICAgICAgICAgIDxnIGlkPSJiYW5uZXJfYWN0aXZlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMTIwLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI0LjAwMDAwMCwgMTQwLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2LjAwMDAwMCwgNDIuMDAwMDAwKSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjQiIGN4PSIyMCIgY3k9IjIwIiByPSIyMCI+PC9jaXJjbGU+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTIyLjc1MTU2MDEsMTUuMTU4NTg2NyBMMjcuMjU0NzI2OSwyMi44MTM5NzAyIEMyNy44MTQ3NjU4LDIzLjc2NjAzNjQgMjcuNDk2OTY0OSwyNC45OTE4Mzk5IDI2LjU0NDg5ODcsMjUuNTUxODc4OCBDMjYuMjM3NTQ1NCwyNS43MzI2NzQ5IDI1Ljg4NzQ0NCwyNS44MjgwMTA0IDI1LjUzMDg1ODQsMjUuODI4MDEwNCBMMTYuNTI0NTI1LDI1LjgyODAxMDQgQzE1LjQxOTk1NTUsMjUuODI4MDEwNCAxNC41MjQ1MjUsMjQuOTMyNTc5OSAxNC41MjQ1MjUsMjMuODI4MDEwNCBDMTQuNTI0NTI1LDIzLjQ3MTQyNDkgMTQuNjE5ODYwNSwyMy4xMjEzMjM0IDE0LjgwMDY1NjYsMjIuODEzOTcwMiBMMTkuMzAzODIzMywxNS4xNTg1ODY3IEMxOS44NjM4NjIyLDE0LjIwNjUyMDUgMjEuMDg5NjY1NywxMy44ODg3MTk2IDIyLjA0MTczMiwxNC40NDg3NTg2IEMyMi4zMzQ4MzkzLDE0LjYyMTE3NDYgMjIuNTc5MTQ0MSwxNC44NjU0Nzk0IDIyLjc1MTU2MDEsMTUuMTU4NTg2NyBaIiBpZD0iVHJpYW5nbGUiIGZpbGw9IiNGRkZGRkYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxLjAyNzg1MSwgMjAuMDAwMTU5KSByb3RhdGUoLTI3MC4wMDAwMDApIHRyYW5zbGF0ZSgtMjEuMDI3ODUxLCAtMjAuMDAwMTU5KSAiPjwvcGF0aD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgICAgICAgICAgPC9nPg0KICAgICAgICAgICAgICAgIDwvZz4NCiAgICAgICAgICAgIDwvZz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg=='></a>
                 </div>
             </div>
         </div>
+        <!-- video -->
     </div>
-    <!-- <div class='second-navbar'> -->
-        <nav class='navbar'>
-            <div class='collapse navbar-collapse'>
-                <ul class='navbar-nav mr-auto'>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">เกี่ยวกับ realme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">เกี่ยวกับ realme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">เกี่ยวกับ realme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">เกี่ยวกับ realme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">เกี่ยวกับ realme</a>
-                    </li>
-                </ul>
+    <div class='g-about'>
+        <div class='container g-second-nav'>
+            <ul class="list-inline d-flex align-item-center justify-content-around">
+                <li class="list-inline-item"><a class="text-center g-second-menu" href="#">เกี่ยวกับ realme</a>
+                </li>
+                <li class="list-inline-item"><a class="text-center g-second-menu" href="#">ไทม์ไลน์</a></li>
+                <li class="list-inline-item"><a class="text-center g-second-menu" href="#">รางวัล</a></li>
+                <li class="list-inline-item"><a class="text-center g-second-menu" href="#">News</a></li>
+            </ul>
+        </div>
+        <div class='wrapper' id="g-about">
+            <div class="container g-about-realme">
+                <h2 class='opensan-semibold'>เกี่ยวกับ realme</h2>
+                <p>realme เป็นแบรนด์เทคโนโลยีที่ก่อตั้งขึ้นอย่างเป็นทางการเมื่อวันที่ 4 พฤษภาคม 2018 โดยคุณ Sky Li
+                    realme มุ่งมั่นที่จะเป็นผู้นำด้านเทคโนโลยี โดยจุดมุ่งหมายของ realme
+                    คือการสร้างประสบการณ์ที่เหนือกว่าและพัฒนาผลิตภัณฑ์ที่ตอบโจทย์คนรุ่นใหม่</p>
+                <p>ด้วยเทคโนโลยีที่ล้ำสมัยมากขึ้นของสมาร์ทโฟนและ IoT
+                    realmeจึงมุ่งมั่นที่จะพัฒนาผลิตภัณฑ์เทคโนโลยีที่ทันสมัย
+                    เพื่อมอบประสบการณ์ที่เหนือกว่าในกลุ่มสินค้าราคาเดียวกันให้กับผู้ใช้งาน</p>
+                <p>ในต้นปี 2020 realme ได้วางกลยุทธ์ที่จะขับเคลื่อนสมาร์ทโฟน และ AIoT ไปพร้อมกัน ในเดือนมิถุนายนนี้
+                    ยอดผู้ใช้งานสมาร์ทโฟนของ realmeนั้น มากถึง 35 ล้านคนทั่วโลก อีกทั้งยอดขายของผลิตภัณฑ์ หูฟัง AIoT
+                    ยังสูงเป็นประวัติการณ์ทะลุ 1 ล้านชิ้น อ้างอิงจากสถิติการจัดส่งสมาร์ทโฟนทั่วโลกของ Counterpoint
+                    ในไตรมาสที่ 1 ปี 2020 realme แบรนด์สมาร์ทโฟนเพื่อคนรุ่นใหม่ยังคงอยู่ในอันดับที่ 7
+                    โดยมีอัตราการเติบโตอยู่ที่ 157 เปอร์เซนต่อปี โดยเป็นแบรนด์สมาร์ทโฟนที่มีอัตราการเติบโตสูงที่สุดในโลก
+                    และ ถือเป็นหนึ่งในแบรนด์สมาร์ทโฟนหลักของโลกอีกด้วย</p>
             </div>
-        </nav>
-    <!-- </div> -->
+            <div class="container g-about-dna">
+                <img src='img/about-2.jpg' width="100%" height="100%">
+            </div>
+            <div class="row g-vandm">
+                <div class="col g-vision"></div>
+                <div class="col g-mission"></div>
+            </div>
+            <div class="g-market"></div>
 
+        </div>
+
+    </div>
     <!-- footer -->
     <footer>
         <div class="wrapper footer" style="position: relative;">
