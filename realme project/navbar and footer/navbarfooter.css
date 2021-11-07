@@ -33,6 +33,7 @@
 
 .navbar .dropdown {
     position: static;
+    z-index: 9999;
 }
 
 .navbar .dropdown-menu {
