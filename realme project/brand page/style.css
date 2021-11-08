@@ -89,7 +89,11 @@ body {
     margin-bottom: 28px;
 }
 
-#g-about .g-vandm .gvision {
+#g-about .g-about-dna {
+    margin-bottom:20px
+}
+
+#g-about .g-vandm .g-vision {
     background-image: url(img/about-3.jpg);
     background-repeat: no-repeat;
     background-position:top center;
@@ -98,7 +102,7 @@ body {
     margin-bottom: 20px;
 }
 
-#g-about .g-vandm .gmission {
+#g-about .g-vandm .g-mission {
     background-image: url(img/about-4.jpg);
     background-repeat: no-repeat;
     background-position:top center;
