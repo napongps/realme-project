@@ -1448,6 +1448,11 @@ body {
     border-bottom: solid 0.01rem #e9e9e9;
   }
 
+  .k-sec-spec-params .k-sec-spec-item:last-child {
+    border-bottom: none;
+  }
+
+
   .k-sec-spec-params .k-sec-spec-item .k-sec-label {
     width: 202px;
     font-size: 24px;
@@ -1493,4 +1498,35 @@ body {
     width: 100%;
   }
 
+  .k-sec-spec-params .k-sec-spec-item .k-sec-spec-list ul.k-sec-spec-one {
+    width: 70%;
+    height: 698px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .k-sec-spec-params .k-sec-spec-item .k-sec-spec-list ul.k-sec-spec-two {
+    width: 66%;
+  }
+
+  .k-sec-spec-params .k-sec-spec-item .k-sec-spec-list .k-spec-detail {
+    display: flex;
+  }
+
+  .k-sec-spec-params .k-sec-spec-item .k-sec-spec-list ul li {
+    margin-bottom: 40px;
+  }
+
+  .k-sec-spec-params .k-sec-spec-item .k-sec-spec-list .k-sec-item-title {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 20px;
+  }
+
+  .k-sec-spec-params .k-sec-spec-item .k-sec-spec-list ul.k-sec-spec-half {
+    width: 70%;
+    margin-bottom: 58px;
+  }
   /* End of GT Master Page */
