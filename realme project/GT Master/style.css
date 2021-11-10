@@ -748,8 +748,9 @@ body {
   }
 
   .k-sec-charge .k-bg img {
+    width: 1360px;
     height: 100%;
-    overflow: hidden;
+    object-fit: cover;
   }
 
   .k-sec-charge .k-sec-title {
