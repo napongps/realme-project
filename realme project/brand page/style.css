@@ -47,13 +47,34 @@ body {
     background-position:top center;
     position:relative;
     padding-top: 85px;
+    padding-bottom:85px;
     background-size:100% auto;
 }
 .g-second-nav {
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.g-second-nav ul {
+    margin: 0;
+    height: 44px;
+}
+
+.g-about .container-fluid .wrapper{
+    width:1200px;
+}
+.show-top {
+    position: fixed;
+    top:0;
+    left: 0;
+    transform: translate(0, 0);
+    background-color: rgba(255,255,255,.9);
+    height: 47px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .g-second-menu {
@@ -62,13 +83,17 @@ body {
     text-align: center;
 }
 
-.g-second-menu:hover {
+.g-second-menu:hover, .active{
     color: rgb(252, 204, 20); 
 }
 
 #g-about .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+}
+
+.g-about-title {
+    font-size:36px;
 }
 
 #g-about .g-about-realme{
@@ -78,10 +103,10 @@ body {
     background-size: 100% 100%;
     padding:60px 120px;
     margin-bottom: 20px;
+    height: 460px;
 }
 #g-about .g-about-realme h2 {
     margin-bottom: 20px;
-    font-size: 36px;
 }
 
 #g-about .g-about-realme p {
@@ -90,7 +115,12 @@ body {
 }
 
 #g-about .g-about-dna {
-    margin-bottom:20px
+    margin-bottom:20px;
+    padding:0;
+}
+#g-about .g-about-dna h2 {
+    top:60px;
+    left:120px;
 }
 
 #g-about .g-vandm .g-vision {
@@ -98,8 +128,9 @@ body {
     background-repeat: no-repeat;
     background-position:top center;
     background-size: 100% 100%;
-    padding:60px 120px;
+    padding:80px 0;
     margin-bottom: 20px;
+    margin-right:10px;
 }
 
 #g-about .g-vandm .g-mission {
@@ -107,7 +138,27 @@ body {
     background-repeat: no-repeat;
     background-position:top center;
     background-size: 100% 100%;
-    padding:60px 120px;
+    padding:80px 0;
     margin-bottom: 20px;
+    margin-left:10px;
 }
 
+#g-about .g-vandm .g-vision h2, #g-about .g-vandm .g-mission h2 {
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+#g-about .g-vandm img {
+    margin-bottom:40px;
+}
+
+#g-about .g-vandm p {
+    font-size: 24px;
+}
+
+#g-about .g-market {
+    height: 460px;
+    width: 100%;
+    background-color: white;
+    padding:60px 120px;
+}
