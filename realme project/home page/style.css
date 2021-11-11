@@ -361,6 +361,7 @@
 
 .plate-hover {
   transform: translateY(0px);
+  transition: all 0.3s;
 }
 .plate-hover:hover {
   transform: translateY(-1.5px);
