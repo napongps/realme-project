@@ -292,6 +292,7 @@ body {
   .k-designer-videos {
     height: 750px;
     background-color: #000;
+    position: relative;
   }
 
   .k-designer-videos .k-video {
@@ -302,6 +303,20 @@ body {
 
   .k-designer-videos video {
     height: 750px;
+  }
+
+  .k-designer-videos .k-video a.k-play {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .k-designer-videos .k-video a.k-play img {
+    width: 70px;
+    height: 83px;
   }
 
   video {
