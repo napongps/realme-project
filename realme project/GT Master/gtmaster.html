@@ -703,7 +703,7 @@
     <!-- navbar -->
 
     <!-- Second Navbar -->
-    <nav class="navbar navbar-expand-lg k-navbar sticky-top">
+    <nav class="navbar navbar-expand-lg k-navbar sticky-top" id="sticky-top">
         <div class="container ml">
             <img src="img/logo realme master.svg" height="16px" />
             <div class="collapse navbar-collapse k-collapse">
@@ -713,11 +713,54 @@
                 </ul>
             </div>
             <div>
-                <a href="#" class="product-nav-btn gtag" data-gtag="realme_gt_master_edition|nav_btn" title="purchase">สั่งซื้อ</a>
+                <a href="#" onclick="purchase()" class="product-nav-btn gtag" data-gtag="realme_gt_master_edition|nav_btn" title="purchase">สั่งซื้อ</a>
             </div>
         </div>
     </nav>
     <!-- Secound Navbar -->
+
+    <section class="k-purchase-box" style="display: none;">
+        <div class="k-purchase-site-modal">
+            <div class="k-purchase-site-close-icon">
+                <img src="img/close icon.svg">
+            </div>
+            <div class="k-purchase-site-message">
+
+            </div>
+            <div class="k-purchase-site-option">
+                <div class="k-country-item">
+                    8+128GB
+                    <div class="k-purchase-site-details">
+                        <a href="#">
+                        <picture>
+                            <img src="img/shopee.png">
+                        </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="k-country-item">
+                    8+256GB
+                    <div class="k-purchase-site-details">
+                        <a href="#">
+                        <picture>
+                            <img src="img/lazada.png">
+                        </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="k-country-item">
+                    <br>
+                    <div class="k-purchase-site-details">
+                        <a href="#">
+                        <picture>
+                            <img src="img/jd central.png">
+                        </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Content -->
     <div class="k-wrapper-banner">
