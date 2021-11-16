@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>ic_activate_pc</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_activate_pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(8.000000, 10.000000)">
+            <rect id="矩形" stroke="#979797" stroke-width="4" x="2" y="2" width="58" height="67"></rect>
+            <rect id="矩形" fill="#979797" x="1" y="14" width="59" height="4"></rect>
+            <polygon id="矩形" fill="#979797" points="40 29 40 35 37 35"></polygon>
+            <rect id="矩形" fill="#D8D8D8" x="34" y="41" width="6" height="6"></rect>
+            <rect id="矩形" fill="#979797" x="46" y="29" width="6" height="6"></rect>
+            <rect id="矩形" fill="#979797" x="46" y="41" width="6" height="6"></rect>
+            <rect id="矩形" fill="#979797" x="46" y="53" width="6" height="6"></rect>
+            <polygon id="矩形" fill="#D8D8D8" points="46 57 52 59 46 59"></polygon>
+            <rect id="矩形" fill="#D8D8D8" x="34" y="53" width="6" height="6"></rect>
+            <rect id="矩形" fill="#D8D8D8" x="22" y="29" width="6" height="6"></rect>
+            <polygon id="矩形" fill="#D8D8D8" points="34 29 40 29 36.9641118 35 34 35"></polygon>
+            <rect id="矩形" fill="#D8D8D8" x="10" y="29" width="6" height="6"></rect>
+            <rect id="矩形" fill="#D8D8D8" x="22" y="41" width="6" height="6"></rect>
+            <rect id="矩形" fill="#D8D8D8" x="22" y="53" width="6" height="6"></rect>
+            <circle id="椭圆形" stroke="#F7CA49" stroke-width="4" cx="56" cy="40" r="18"></circle>
+            <line x1="64" y1="57" x2="71.1157502" y2="70.9960501" id="路径-20" stroke="#F7CA49" stroke-width="4" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>
