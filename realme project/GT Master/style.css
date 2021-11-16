@@ -16,6 +16,10 @@ body {
     font-weight: 400;
   }
 
+  a {
+    cursor: pointer;
+  }
+
   .k-purchase-box {
     position: fixed;
     left: 0;
@@ -1514,7 +1518,6 @@ body {
   }
 
   .k-sec-spec-banner .k-spec-color a.k-one span::after {
-
     content: "";
     position: absolute;
     top: 0;

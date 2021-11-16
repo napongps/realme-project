@@ -18,10 +18,8 @@ function purchase() {
     document.querySelector(".k-purchase-box").style = "display: flex;";
     document.querySelector(".k-purchase-site-close-icon").addEventListener("click", () => {
         document.querySelector(".k-purchase-box").style.display = "none";
-        document.getElementById("sticky-top").classList.add("sticky-top");
         document.body.style = "overflow: auto;";
         document.querySelector(".header").style = "pointer-events: auto;";
       })
-    document.getElementById("sticky-top").classList.remove("sticky-top");
 }
 
