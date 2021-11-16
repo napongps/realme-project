@@ -604,10 +604,82 @@
             white-space: nowrap;
             margin-right: 40px;
         }
+
         .img {
-            width: 100%; 
+            width: 100%;
             height: 100%;
             position: absolute;
+            transition: opacity 0.5s;
+        }
+
+        .k-purchase-box {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .3);
+            z-index: 15;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            overflow: auto;
+            justify-content: center;
+
+        }
+
+        .k-purchase-box .k-purchase-site-modal {
+            background: #fff;
+            position: relative;
+            width: 834px;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-close-icon {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            cursor: pointer;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-message {
+            box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 10%);
+            border-radius: 4px 4px 0 0;
+            text-align: center;
+            color: #333;
+            padding: 40px 0;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-option {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 32px 132px;
+            padding-right: 0;
+            max-height: 60vh;
+            max-width: 60vh;
+            overflow-y: auto;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-option .k-country-item {
+            margin-right: 0;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-option .k-purchase-site-details {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 720px;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-option .k-purchase-site-details a {
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 4px;
+            margin: 9px;
+            overflow: hidden;
+        }
+
+        .k-purchase-box .k-purchase-site-modal .k-purchase-site-option .k-purchase-site-details a img {
+            width: 160px;
+            height: 160px;
         }
     </style>
 </head>
@@ -646,7 +718,8 @@
                                             </a>
                                         </div>
                                         <div class="col-md-4 mt-2 fadeUp">
-                                            <a href='../GT/gt.html' style="text-decoration:none" title='realme GT' target="_blank">
+                                            <a href='../GT/gt.html' style="text-decoration:none" title='realme GT'
+                                                target="_blank">
                                                 <img src='../img/GT.png' class='mr-3' width="80" height="80">
                                                 <p style='color:black; white-space: pre-line;' class='submenu'>
                                                     realme GT
@@ -670,7 +743,8 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-4 mt-4 fadeUp">
-                                            <a href='../8 5G/index.html' style="text-decoration:none" title='realme 8 5G' target="_blank">
+                                            <a href='../8 5G/index.html' style="text-decoration:none"
+                                                title='realme 8 5G' target="_blank">
                                                 <img src='../img/8 5G.png' class='mr-3' width="80" height="80">
                                                 <p style='color:black; white-space: pre-line;' class='submenu'>
                                                     realme 8 5G
@@ -1136,8 +1210,7 @@
                                                 <div class='col-2  tabmenu' id='equitment' onmouseover="toggle(this.id)"
                                                     onmouseout="bold(this.id)">
                                                     <a href='#' class='sub-submenu' style='text-decoration:none; 
-                            '>อุปกรณ์สมาร์ทโฟน<span><img class='right-arrow'
-                                                                src='../img/arrow/next.svg'></span></a>
+                            '>อุปกรณ์สมาร์ทโฟน<span><img class='right-arrow' src='../img/arrow/next.svg'></span></a>
                                                 </div>
                                                 <div class="col detail" id='detail-equitment'>
                                                     <div class='row'>
@@ -1254,16 +1327,16 @@
                     </ul>
                     <ul class="navbar-nav mx-1">
                         <li class="nav-item">
-                            <a class="nav-link menu" href="../brand page/brand.html" id="navbarDropdown" role="button" aria-haspopup="true"
-                                aria-expanded="false" target="_blank">
+                            <a class="nav-link menu" href="../brand page/brand.html" id="navbarDropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false" target="_blank">
                                 แบรนด์
                             </a>
                         </li>
                     </ul>
                     <ul class="navbar-nav mx-1">
                         <li class="nav-item">
-                            <a class="nav-link menu" href="../help page/help.html" id="navbarDropdown" role="button" aria-haspopup="true"
-                                aria-expanded="false" target="_blank">
+                            <a class="nav-link menu" href="../help page/help.html" id="navbarDropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false" target="_blank">
                                 ช่วยเหลือ
                             </a>
                         </li>
@@ -1272,7 +1345,7 @@
             </div>
         </nav>
     </header>
-    <nav class="navbar navbar-expand-lg r-navbar sticky-top">
+    <nav class="navbar navbar-expand-lg r-navbar sticky-top" id="sticky-top" style="z-index: 10;">
         <div class="container ml">
             <img src="img/1624516269021.svg" height="16px" />
             <div class="collapse navbar-collapse r-collapse">
@@ -1283,22 +1356,75 @@
                 </ul>
             </div>
             <div>
-                <a href="#" class="product-nav-btn gtag" data-gtag="realme_gt|nav_btn" title="purchase">สั่งซื้อ</a>
+                <a onclick="purchase()" class="product-nav-btn gtag" data-gtag="realme_gt|nav_btn" title="purchase" style="cursor:pointer;">สั่งซื้อ</a>
             </div>
         </div>
     </nav>
+    <section class="k-purchase-box" style="display: none;">
+        <div class="k-purchase-site-modal">
+            <div class="k-purchase-site-close-icon">
+                <img src="img/close icon.svg">
+            </div>
+            <div class="k-purchase-site-message">
+
+            </div>
+            <div class="k-purchase-site-option row">
+                <div class="k-country-item col">
+                    <div class="k-purchase-site-details">
+                        <a href="#">
+                            <picture>
+                                <img src="img/shopee.png">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="k-country-item col">
+                    <div class="k-purchase-site-details">
+                        <a href="#">
+                            <picture>
+                                <img src="img/lazada.png">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="k-country-item col">
+                    <div class="k-purchase-site-details">
+                        <a href="#">
+                            <picture>
+                                <img src="img/jd central.png">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function purchase() {
+                document.body.style = "overflow: hidden;";
+                document.querySelector(".header").style = "pointer-events: none;";
+                document.querySelector(".k-purchase-box").style = "display: flex;";
+                document.querySelector(".k-purchase-site-close-icon").addEventListener("click", () => {
+                    document.querySelector(".k-purchase-box").style.display = "none";
+                    document.getElementById("sticky-top").classList.add("sticky-top");
+                    document.body.style = "overflow: auto;";
+                    document.querySelector(".header").style = "pointer-events: auto;";
+                })
+            }
+        </script>
+    </section>
     <section class="r-sec-spec-banner">
         <div class="r-sec-wrapper">
             <div class="r-swiper-container">
                 <div class="r-swiper-wrapper">
                     <div class="r-swiper-slide">
                         <picture>
-                            <img id="r-phone-color1" class="img" src="img/dazzle-7d918455d8.png" alt>
+                            <img id="r-phone-color1" style="opacity: 1;" class="img" src="img/dazzle-7d918455d8.png"
+                                alt>
                         </picture>
                     </div>
                     <div class="r-swiper-slide">
                         <picture>
-                            <img id="r-phone-color2" class="img" src="img/blue-6565bbcdb9.png" alt>
+                            <img id="r-phone-color2" style="opacity: 0;" class="img" src="img/blue-6565bbcdb9.png" alt>
                         </picture>
                     </div>
                 </div>
@@ -1334,11 +1460,11 @@
                 <div class="r-sec-spec-item r-spec-color">
                     <h2 class="r-sec-spec-color-title">Color</h2>
                     <div class="r-sec-spec-color">
-                        <a href="#" data-index="0" class="r-one r-selected" id="r-one" onclick="changeYellow()">
+                        <a style="cursor:pointer;" data-index="0" class="r-one r-selected" id="r-one" onclick="changeYellow()">
                             <span></span>
                             <p>Racing Yellow</p>
                         </a>
-                        <a href="#" data-index="1" class="r-two" id="r-two" onclick="changeBlue()">
+                        <a style="cursor:pointer;" data-index="1" class="r-two" id="r-two" onclick="changeBlue()">
                             <span></span>
                             <p>Dashing Blue</p>
                         </a>
