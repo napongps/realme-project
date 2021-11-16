@@ -23,3 +23,20 @@ function purchase() {
       })
 }
 
+function popup1() {
+    document.querySelector('.k-popup').style ='display:auto;';
+    document.getElementById('k-popup_video').muted=false;
+    document.getElementById('k-popup_video').play();
+    document.getElementById('k-popup_video').src='video/play1.mp4';
+}
+function close_popup() {
+    document.querySelector('.k-popup').style ='display:none;';
+    document.getElementById('k-popup_video').muted=true;
+}
+
+function popup2() {
+    document.querySelector('.k-popup').style ='display:auto;';
+    document.getElementById('k-popup_video').muted=false;
+    document.getElementById('k-popup_video').play();
+    document.getElementById('k-popup_video').src='video/play2.mp4';
+}
