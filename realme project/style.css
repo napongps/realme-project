@@ -3,7 +3,7 @@
     src:
       local('DBadmanX'),
       local('DB adman X'),
-      url('../font/DBAdmanX.ttf') format('truetype');
+      url('font/DBAdmanX.ttf') format('truetype');
   }
 
   body {
