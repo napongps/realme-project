@@ -46,3 +46,13 @@ function myFunction() {
         } 
     }
 }
+function popup() {
+    document.querySelector('.g-popup').style ='display:auto;';
+    document.getElementById('g-popup_video').muted=false;
+    document.getElementById('g-popup_video').play();
+    document.getElementById('g-popup_video').src='video/popup video.mp4';
+}
+function close_popup() {
+    document.querySelector('.g-popup').style ='display:none;';
+    document.getElementById('g-popup_video').muted=true;
+}

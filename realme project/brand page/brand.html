@@ -28,8 +28,15 @@
 </head>
 
 <body>
+
+    <div class="g-popup"style='display:none;'>
+        <div class="g-video-wrapper">
+            <a href='#' class='g-close-popup' title="Close Video" onclick="close_popup()"></a>
+            <video src='video/popup video.mp4' width="100%" id='g-popup_video' muted='true' loop='true' autoplay="autoplay"></video>
+        </div>
+    </div>
     <!-- navbar -->
-    <div class="wrapper">
+    <div class="wrapper" id='g-navbar'>
         <header class='header sticky-top'>
 
             <nav class="navbar navbar-expand-lg ">
@@ -711,12 +718,13 @@
                 <div class="wrapper g-overlay-video">
                     <h1 class='text-white opensan-semibold' style="font-size: 40px;">Dare to Leap
                     </h1>
-                    <a href=''><img src='img/play-button.svg'></a>
+                    <a href='#'><img src='img/play-button.svg' onclick="popup()"></a>
                 </div>
             </div>
         </div>
         <!-- video -->
     </div>
+
     <div class='g-about' id="g-about">
         <div class='container-fluid g-second-nav sticky-top' id='g-second-nav'>
             <div class="wrapper mx-auto">
