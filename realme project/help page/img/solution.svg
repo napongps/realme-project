@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ic_check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#000000" id="Rectangle" opacity="0">
+            <rect x="0" y="0" width="90" height="90"></rect>
+        </g>
+        <rect id="矩形" stroke="#979797" stroke-width="4" x="15" y="11" width="61" height="69"></rect>
+        <rect id="矩形" fill="#979797" x="23" y="29" width="27" height="4"></rect>
+        <rect id="矩形" fill="#979797" x="23" y="44" width="27" height="4"></rect>
+        <rect id="矩形" fill="#979797" x="23" y="58" width="27" height="4"></rect>
+        <rect id="矩形" fill="#D8D8D8" x="58" y="28" width="6" height="6"></rect>
+        <rect id="矩形" fill="#D8D8D8" x="58" y="43" width="6" height="6"></rect>
+        <polyline id="路径-6" stroke="#FFC915" stroke-width="4" points="55 56.5495605 59.1938477 61.3459473 68.2451172 53.8129883"></polyline>
+    </g>
+</svg>
