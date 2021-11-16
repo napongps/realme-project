@@ -868,11 +868,17 @@
         </div>
     </section>
     
+    <div class="k-popup"style='display:none;'>
+        <div class="k-video-wrapper">
+            <a class='k-close-popup' title="Close Video" onclick="close_popup()"></a>
+            <video src='video/play1.mp4' width="100%" id='k-popup_video' muted='true' loop='true' autoplay="autoplay"></video>
+        </div>
+    </div>
 
     <section class="k-designer-videos">
         <div class="k-video" data-video="video/1.mp4">
             <video src="video/1.mp4" autoplay="true" muted="muted" id="k-productVideo" loop></video>
-            <a class="k-play" href="video/play1.mp4">
+            <a class="k-play" onclick="popup1()">
                 <img src="img/play-button.svg">
             </a>
         </div>
@@ -929,10 +935,17 @@
         </div>
     </div>
 
+    <div class="k-popup"style='display:none;'>
+        <div class="k-video-wrapper">
+            <a class='k-close-popup' title="Close Video" onclick="close_popup()"></a>
+            <video src='video/play2.mp4' width="100%" id='k-popup_video' muted='true' loop='true' autoplay="autoplay"></video>
+        </div>
+    </div>
+
     <section class="k-designer-videos">
         <div class="k-video" data-video="video/2.mp4">
             <video src="video/2.mp4" autoplay="true" muted="muted" id="k-productVideo" loop></video>
-            <a class="k-play" href="video/play2.mp4">
+            <a class="k-play" onclick="popup2()">
                 <img src="img/play-button.svg">
             </a>
         </div>

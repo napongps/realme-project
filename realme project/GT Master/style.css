@@ -313,6 +313,35 @@ body {
     display: block;
   }
 
+  .k-popup {
+    background-color: white;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.k-popup .k-video-wrapper {
+    width: 60vw;
+    position: relative;
+}
+.k-popup .k-video-wrapper .k-close-popup {
+    background-image: url('img/close icon.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -10px;
+    top: -90px;
+
+}
+
   .k-designer-videos {
     height: 750px;
     background-color: #000;
