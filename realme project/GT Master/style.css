@@ -165,6 +165,26 @@ body {
     margin-bottom: 60px;
   }
 
+  .k-wrapper .k-content-text .k-text-item p {
+    line-height: 42px;
+  }
+
+  .k-point .k-wrapper .k-sec-content-btn {
+    padding: 0 10px;
+    width: fit-content;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #fff;
+  }
+
   .k-sec-explore {
     height: 1624px;
     padding-top: 180px;
