@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="realme-C11" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC_realme-C11_overview" transform="translate(-1254.000000, -2554.000000)">
+            <g id="03_video" transform="translate(1.000000, 2206.000000)">
+                <g id="icon" transform="translate(1255.000000, 350.000000)">
+                    <circle id="椭圆形" stroke="#FFFFFF" stroke-width="4" cx="25" cy="25" r="25"></circle>
+                    <path d="M30.1824237,19.6350423 L36.093057,30.3685964 C36.6258665,31.3361644 36.2734251,32.5524607 35.3058571,33.0852702 C35.010346,33.2479989 34.6784738,33.3333333 34.3411202,33.3333333 L21.6560108,33.3333333 C20.5514413,33.3333333 19.6560108,32.4379028 19.6560108,31.3333333 C19.6560108,30.9554955 19.7630404,30.5853864 19.9647051,30.2658668 L26.7391811,19.5323127 C27.3287266,18.5982303 28.5638711,18.318928 29.4979534,18.9084735 C29.7838528,19.0889187 30.019344,19.3388939 30.1824237,19.6350423 Z" id="三角形" fill="#FFFFFF" transform="translate(27.877160, 25.000000) rotate(-270.000000) translate(-27.877160, -25.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
