@@ -1685,7 +1685,7 @@
         }
 
         .r-sec-remark .r-sec-wrapper .r-sec-brief {
-            font-size: 19px;
+            font-size: 18px;
             line-height: 36px;
             margin-bottom: 10px;
         }
@@ -1733,7 +1733,6 @@
             padding: 32px 132px;
             padding-right: 0;
             max-height: 60vh;
-            max-width: 60vh;
             overflow-y: auto;
         }
 
@@ -1768,7 +1767,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class='container ml'>
 
-                <a class="navbar-brand mr-5" href="../home page/index.html">
+                <a class="navbar-brand mr-5" href="../index.html">
                     <img src='../img/logo realme.png' width="80" height="24">
                 </a>
 
@@ -1796,8 +1795,8 @@
                                             </a>
                                         </div>
                                         <div class="col-md-4 mt-2 fadeUp">
-                                            <a href='gt.html' target="_blank" style="text-decoration:none"
-                                                title='realme GT'>
+                                            <a href='../GT/gt.html' style="text-decoration:none" title='realme GT'
+                                                target="_blank">
                                                 <img src='../img/GT.png' class='mr-3' width="80" height="80">
                                                 <p style='color:black; white-space: pre-line;' class='submenu'>
                                                     realme GT
@@ -2414,7 +2413,7 @@
                     <ul class="navbar-nav mx-1">
                         <li class="nav-item">
                             <a class="nav-link menu" href="../help page/help.html" id="navbarDropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">
+                                aria-haspopup="true" aria-expanded="false" target="_blank">
                                 ช่วยเหลือ
                             </a>
                         </li>
@@ -2423,7 +2422,7 @@
             </div>
         </nav>
     </header>
-    <nav class="navbar navbar-expand-lg r-navbar sticky-top">
+    <nav class="navbar navbar-expand-lg r-navbar sticky-top" id="sticky-top" style="z-index: 10;">
         <div class="container ml">
             <img src="img/1624516269021.svg" height="16px" />
             <div class="collapse navbar-collapse r-collapse">
@@ -2434,7 +2433,7 @@
                 </ul>
             </div>
             <div>
-                <a href="#" class="product-nav-btn gtag" data-gtag="realme_gt|nav_btn" title="purchase">สั่งซื้อ</a>
+                <a onclick="purchase()" class="product-nav-btn gtag" data-gtag="realme_gt|nav_btn" title="purchase" style="cursor:pointer;">สั่งซื้อ</a>
             </div>
         </div>
     </nav>
@@ -2446,8 +2445,8 @@
             <div class="k-purchase-site-message">
 
             </div>
-            <div class="k-purchase-site-option row">
-                <div class="k-country-item col">
+            <div class="k-purchase-site-option">
+                <div class="k-country-item">
                     <div class="k-purchase-site-details">
                         <a href="#">
                             <picture>
@@ -2456,7 +2455,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="k-country-item col">
+                <div class="k-country-item">
                     <div class="k-purchase-site-details">
                         <a href="#">
                             <picture>
@@ -2465,7 +2464,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="k-country-item col">
+                <div class="k-country-item">
                     <div class="k-purchase-site-details">
                         <a href="#">
                             <picture>
@@ -2608,7 +2607,7 @@
     </section>
     <section class="r-sec r-sec-performance">
         <figure class="r-sec-bg" data-aos="fade-up" data-aos-duration="600"></figure>
-        <div class="r-title" data-aos="fade-up" data-aos-duration="600" style="margin-left: -20px;">พลังแห่งสายฟ้า<br>
+        <div class="r-title" data-aos="fade-down" data-aos-duration="600" style="margin-left: -20px;">พลังแห่งสายฟ้า<br>
             ประสิทธิภาพของเรือธง</div>
         <div class="r-sec-wrapper">
             <div class="r-sec-content" data-aos="fade-up" data-aos-duration="800">
@@ -2751,7 +2750,7 @@
     </section>
     <section class="r-sec r-sec-charge">
         <figure class="r-sec-bg" data-aos="fade-up" data-aos-duration="600"></figure>
-        <div class="title" style="top: 110px; margin-left: 10px;" data-aos="fade-up" data-aos-duration="600">พลัง
+        <div class="r-title" style="top: 110px; margin-left: 10px;" data-aos="fade-up" data-aos-duration="600">พลัง
             Supercharged</div>
         <div class="r-sec-wrapper">
             <div class="r-sec-content">
