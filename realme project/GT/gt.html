@@ -1768,7 +1768,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class='container ml'>
 
-                <a class="navbar-brand mr-5" href="../home page/index.html">
+                <a class="navbar-brand mr-5" href="../index.html">
                     <img src='../img/logo realme.png' width="80" height="24">
                 </a>
 
@@ -1796,8 +1796,8 @@
                                             </a>
                                         </div>
                                         <div class="col-md-4 mt-2 fadeUp">
-                                            <a href='gt.html' target="_blank" style="text-decoration:none"
-                                                title='realme GT'>
+                                            <a href='../GT/gt.html' style="text-decoration:none" title='realme GT'
+                                                target="_blank">
                                                 <img src='../img/GT.png' class='mr-3' width="80" height="80">
                                                 <p style='color:black; white-space: pre-line;' class='submenu'>
                                                     realme GT
@@ -2414,7 +2414,7 @@
                     <ul class="navbar-nav mx-1">
                         <li class="nav-item">
                             <a class="nav-link menu" href="../help page/help.html" id="navbarDropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">
+                                aria-haspopup="true" aria-expanded="false" target="_blank">
                                 ช่วยเหลือ
                             </a>
                         </li>
@@ -2423,18 +2423,18 @@
             </div>
         </nav>
     </header>
-    <nav class="navbar navbar-expand-lg r-navbar sticky-top">
+    <nav class="navbar navbar-expand-lg r-navbar sticky-top" id="sticky-top" style="z-index: 10;">
         <div class="container ml">
             <img src="img/1624516269021.svg" height="16px" />
             <div class="collapse navbar-collapse r-collapse">
                 <ul class="navbar-nav r-text">
-                    <li class="nav-item r-nav-item"><a href="gt.html" title="Overview" class="active">ภาพรวม</a>
+                    <li class="nav-item r-nav-item"><a href="gt.html" title="Overview" class>ภาพรวม</a>
                     </li>
-                    <li class="nav-item r-nav-item"><a href="spec.html" title="Specs" class>สเปค</a></li>
+                    <li class="nav-item r-nav-item"><a href="spec.html" title="Specs" class="active">สเปค</a></li>
                 </ul>
             </div>
             <div>
-                <a href="#" class="product-nav-btn gtag" data-gtag="realme_gt|nav_btn" title="purchase">สั่งซื้อ</a>
+                <a onclick="purchase()" class="product-nav-btn gtag" data-gtag="realme_gt|nav_btn" title="purchase" style="cursor:pointer;">สั่งซื้อ</a>
             </div>
         </div>
     </nav>
