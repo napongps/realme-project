@@ -1461,11 +1461,11 @@
                     <div class="r-sec-spec-color">
                         <a style="cursor:pointer;" data-index="0" class="r-one r-selected" id="r-one" onclick="changeYellow()">
                             <span></span>
-                            <p>Racing Yellow</p>
+                            <p style='color: black; font-weight: bold; opacity: 1;' id='yellow'>Racing Yellow</p>
                         </a>
                         <a style="cursor:pointer;" data-index="1" class="r-two" id="r-two" onclick="changeBlue()">
                             <span></span>
-                            <p>Dashing Blue</p>
+                            <p id='blue' >Dashing Blue</p>
                         </a>
                     </div>
                 </div>
@@ -1478,6 +1478,8 @@
                 document.getElementById("r-phone-color1").style = "opacity: 1;";
                 document.getElementById("r-two").classList.remove("r-selected");
                 document.getElementById("r-one").classList.add("r-selected");
+                document.getElementById("yellow").style= "opacity: 1; color: black; font-weight: bold;";
+                document.getElementById("blue").style= "";
             }
 
             function changeBlue() {
@@ -1485,6 +1487,8 @@
                 document.getElementById("r-phone-color2").style = "opacity: 1;";
                 document.getElementById("r-one").classList.remove("r-selected");
                 document.getElementById("r-two").classList.add("r-selected");
+                document.getElementById("blue").style= "opacity: 1; color: black; font-weight: bold;";
+                document.getElementById("yellow").style= "";
             }
         </script>
     </section>
